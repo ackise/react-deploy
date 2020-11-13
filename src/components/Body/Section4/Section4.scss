@@ -1,0 +1,45 @@
+.formwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+
+    &__title{
+        font-size: 30px;
+        text-align: center;
+        color: #212529;
+        margin-bottom: 118px;
+        
+    }
+
+}
+.form{
+    margin: 0 auto;
+    width: 330px;
+
+    &__fieldphoto{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__intputfield{
+        padding: 5px;
+    }
+}
+.button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 210px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: #ef5b4c;
+    color: #fff;
+    outline: none;
+    border: none;
+    
+}
+.photo-input{
+    display: flex;
+    flex-direction: row;
+}

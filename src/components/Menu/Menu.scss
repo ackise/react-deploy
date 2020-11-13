@@ -1,0 +1,45 @@
+.menu {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+
+  &__item {
+    font-size: 14px;
+    display: block;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s;
+    outline: none;
+
+  
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.29;
+    letter-spacing: normal;
+    color: #212529;
+
+  }
+
+
+  &__item:hover {
+    color: #ef5b4c;
+  }
+
+  &__item:active {
+    color: #007bff;
+  }
+
+
+}
+
+@media(max-width:769px) {
+  .menu {
+    display: none;
+  }
+
+}

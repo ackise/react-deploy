@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/abztesttask/static/css/main.a5c555c0.chunk.css",
+    "main.js": "/abztesttask/static/js/main.b5832236.chunk.js",
+    "main.js.map": "/abztesttask/static/js/main.b5832236.chunk.js.map",
+    "runtime-main.js": "/abztesttask/static/js/runtime-main.5f4099e6.js",
+    "runtime-main.js.map": "/abztesttask/static/js/runtime-main.5f4099e6.js.map",
+    "static/js/2.9d8b6869.chunk.js": "/abztesttask/static/js/2.9d8b6869.chunk.js",
+    "static/js/2.9d8b6869.chunk.js.map": "/abztesttask/static/js/2.9d8b6869.chunk.js.map",
+    "static/js/3.b8dd169e.chunk.js": "/abztesttask/static/js/3.b8dd169e.chunk.js",
+    "static/js/3.b8dd169e.chunk.js.map": "/abztesttask/static/js/3.b8dd169e.chunk.js.map",
+    "index.html": "/abztesttask/index.html",
+    "static/css/main.a5c555c0.chunk.css.map": "/abztesttask/static/css/main.a5c555c0.chunk.css.map",
+    "static/js/2.9d8b6869.chunk.js.LICENSE.txt": "/abztesttask/static/js/2.9d8b6869.chunk.js.LICENSE.txt",
+    "static/media/Section1.scss": "/abztesttask/static/media/banner-photo.9614ebc2.jpg",
+    "static/media/logo.d190168a.svg": "/abztesttask/static/media/logo.d190168a.svg",
+    "static/media/man-laptop-v1.bdb026ef.svg": "/abztesttask/static/media/man-laptop-v1.bdb026ef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f4099e6.js",
+    "static/js/2.9d8b6869.chunk.js",
+    "static/css/main.a5c555c0.chunk.css",
+    "static/js/main.b5832236.chunk.js"
+  ]
+}

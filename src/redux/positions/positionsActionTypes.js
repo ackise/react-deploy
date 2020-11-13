@@ -1,0 +1,2 @@
+export const GET_POSITIONS = 'GET_POSITIONS';
+export const SAVE_POSITIONS = 'SAVE_POSITIONS';
