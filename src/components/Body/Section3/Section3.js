@@ -29,8 +29,11 @@ const Section3 = (props)=> {
     return (
         <div className='users' >
             <h1 className='users__title'>Our cheerful users</h1>
+            <div className='users__batch'>
             {sortedUsers.map(user => <UserCard  key={user.id} id={user.id}  name={user.name}  email={user.email} phone={user.phone} position={user.position} regtime={user.registration_timestamp} photo={user.photo} />)}
-            {data.page !== data.total_pages && <button className='users__button' onClick={() => dispatch(showMore(3,link.links.next_url))}>Show more</button>}
+
+            </div>
+            {data.page !== data.total_pages && <button className='users__button' onClick={() => dispatch(showMore(6,link.links.next_url))}>Show more</button>}
             
         </div>
     )

@@ -22,3 +22,47 @@
         outline: none;
     }
 }
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f3;
+
+    &__title{
+        margin-top: 80px;
+        margin-bottom: 74px;
+    }
+
+    &__button {
+        margin-bottom: 80px;
+        width: 210px;
+        height: 38px;
+        border-radius: 4px;
+        background-color: #ef5b4c;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+        outline: none;
+    }
+    &__batch{
+        height: 850px;
+        overflow: hidden;
+    }
+}
+@media(min-width:768px){
+    .users{
+        &__batch {
+            height: unset;
+            overflow: unset;
+    
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+
+    }
+    
+}
