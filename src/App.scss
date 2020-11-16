@@ -13,16 +13,23 @@
     margin: 0 auto;
   }
 }
-@media (min-width:768px){
+@media (min-width:768px)and (max-width:1024px){
   .App{
     width: 768px;
     margin: 0 auto;
 
   }
 }
-@media(min-width:1024px){
+@media(min-width:1024px) and (max-width:1170px) {
   .App{
     width: 1024px;
+    margin: 0 auto;
+
+  }
+}
+@media(min-width:1170px) and (max-width:2560px) {
+  .App{
+    width: 1170px;
     margin: 0 auto;
 
   }
