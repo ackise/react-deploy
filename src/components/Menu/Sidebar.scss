@@ -8,26 +8,12 @@
     right: 15px;
     top: 13px;
   }
-  @media(min-width:769px){
-    .bm-burger-button{
-      display: none;
-    }
-    .bm-menu-wrap {
-      display: none;
-    }
-    .bm-menu {
-      display: none;
-    }
-    .bm-overlay{
-      display: none;
-    }
-    .bm-morph-shape{
-      display: none;
-    }
-    .burgerwrapp{
-      display: none;
-    }
+  #outer-container {
+    width: 80%;
   }
+ 
+  
+
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
@@ -39,23 +25,12 @@
     background: #a90000;
   }
   
-  /* Position and sizing of clickable cross button */
-  // .bm-cross-button {
-  //   height: 15px;
-  //   width: 20px;
-  // }
-  
-  /* Color/shape of close button cross */
-  // .bm-cross {
-  //   background: #bdc3c7;
-  // }
   
   /*
   Sidebar wrapper styles
   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
   */
   .bm-menu-wrap {
-    margin-left: -100%;
     position: fixed;
     height: 100%;
   }
@@ -86,7 +61,7 @@
 .bm-item {
     display: inline-block;
     color: #212529;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     text-align: left;
     text-decoration: none;
     transition: color 0.2s;
@@ -100,3 +75,42 @@
   .bm-item:active{
     color: #007bff ;
   }
+  @media(max-width:360px){
+    .bm-menu-wrap {
+      margin-left: -25%;
+    }
+
+  }
+  @media(min-width:361px)and (max-width:768px){
+    .bm-menu-wrap {
+      margin-left: -22%;
+
+    }
+  }
+  @media(min-width:769px){
+    .bm-burger-button{
+      display: none;
+    }
+   
+    #outer-container {
+      display: none;
+    }
+    .bm-menu-wrap {
+      display: none;
+    }
+   
+  }
+
+
+
+  //if need crossbar
+  /* Position and sizing of clickable cross button */
+  // .bm-cross-button {
+  //   height: 15px;
+  //   width: 20px;
+  // }
+  
+  /* Color/shape of close button cross */
+  // .bm-cross {
+  //   background: #bdc3c7;
+  // }

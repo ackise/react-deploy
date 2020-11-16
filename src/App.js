@@ -5,7 +5,6 @@ import React, {useEffect} from 'react';
 import {connect} from "react-redux";
 import {loadUsersFromServer } from './redux/users/usersActions';
 import { loadingPositions } from './redux/positions/positionsActions';
-import Sidebar from './components/Menu/Sidebar';
 import Footer from './components/Footer/Footer';
 import Loader from './components/Loader/Loader';
 
@@ -17,16 +16,11 @@ const  App = (props)=> {
     getPositions();
   },[]) 
 
-  // const width = window.innerWidth
-  // console.log(width)
-
 
   return !loadingUsers || !loadingPositions ? <Loader /> :
   
   (
     <div className="App">
-
-        {/* <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/> */}
         <Header/>
         <Body/>
         <Footer/>
