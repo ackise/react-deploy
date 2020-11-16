@@ -94,7 +94,19 @@
 
     }
   }
-  @media(min-width:769px){
+  @media(min-width:769px)and (max-width:1023px){
+    .bm-menu-wrap {
+      margin-left: -27%;
+
+    }
+    #outer-container {
+      width: 130%;
+    }
+  }
+
+
+  @media(min-width:1024px){
+   
     .bm-burger-button{
       display: none;
     }

@@ -11,6 +11,7 @@ import { toggleModal } from '../../../redux/modal/modalActions';
 import Modal from '../../Modal/Modal'
 import * as validation from '../../../services/validation'
 
+
 export const theme = createMuiTheme({
     palette: {
         primary: {
@@ -41,13 +42,14 @@ const useStyles = makeStyles((theme) => ({
             "&::placeholder": {
                 fontSize: '16px',
                 color: '#b2b9c0',
-                fontFamily: 'PT Sans , sans-serif',
+                fontFamily: 'PTSans , sans-serif',
             },
             padding: '14px',
-            height: '14px'
+            height: '10px'
         },
         '& .MuiFormLabel-root': {
-            fontFamily: 'PT Sans , sans-serif',
+            height:'28px',
+            fontFamily: 'PTSans , sans-serif',
             fontSize: '16px',
             color: '#212529',
         },
@@ -69,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
             borderBottomLeftRadius: 0,
             borderTopRightRadius: 4,
             borderBottomRightRadius: 4,
-            fontFamily: 'PT Sans , sans-serif',
+            fontFamily: 'PTSans , sans-serif',
+            fontSize: '16px',
             textTransform: "none",
             boxShadow: 'none',
             border: 'solid 1px #d4d9de'
@@ -77,13 +80,13 @@ const useStyles = makeStyles((theme) => ({
     },
     field: {
         margin: '0 auto',
-        marginBottom: '27px',
+        marginBottom: '20px',
         width: '100%'
 
     },
     photo: {
         '& .MuiOutlinedInput-input': {
-            padding: '14px 68px 10px 13px',
+            padding: '16px 68px 16px 13px',
         },
         '& .MuiOutlinedInput-root': {
             '& fieldset': {

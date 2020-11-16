@@ -2,13 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 70px;
 
     &__title{
         font-size: 30px;
         text-align: center;
         color: #212529;
         margin-bottom: 118px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-family: 'Open Sans', sans-serif;
+
     }
 
 }
