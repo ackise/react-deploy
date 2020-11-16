@@ -81,7 +81,14 @@
     }
 
   }
-  @media(min-width:361px)and (max-width:768px){
+  @media(min-width:361px)and (max-width:425px){
+    .bm-menu-wrap {
+      margin-left: -24%;
+
+    }
+  }
+
+  @media(min-width:426px)and (max-width:768px){
     .bm-menu-wrap {
       margin-left: -22%;
 

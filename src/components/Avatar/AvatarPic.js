@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     large: {
       width: 70,
       height: 70,
-      marginBottom:20
+      marginBottom:24
     },
   }));
 

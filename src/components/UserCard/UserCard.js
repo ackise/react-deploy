@@ -22,24 +22,33 @@ const useStyles = makeStyles(() => ({
       textAlign: 'center',
       fontSize:24,
       marginBottom: 24,
-      color: '#212529'
+      color: '#212529',
+      fontFamily:'OpenSans, sans-serif'
+
+
 
     },
     position:{
       fontSize:16,
-      marginBottom: 14,
-      color: '#4c4b4b'
+      marginBottom: 15,
+      color: '#4c4b4b',
+      fontFamily:'OpenSans, sans-serif'
+
     },
     email:{
       fontSize:16,
       marginBottom: 12,
       width: '100%',
       textAlign: 'center',
-      color: '#4c4b4b'
+      color: '#4c4b4b',
+      fontFamily:'OpenSans, sans-serif'
+
     },
     phone:{
       fontSize:16,
-      color: '#4c4b4b'
+      color: '#4c4b4b',
+      fontFamily:'OpenSans, sans-serif'
+
 
     }
 
@@ -62,7 +71,10 @@ const UserCard = (props)=> {
     return (
             <div className={classes.root}>
                 <Avatarka className={classes.avatar} avatarUrl={photo}/>
-                <Box className={classes.name}>{name}</Box>
+                <LightTooltip className={classes.tooltip} title={name}>
+                      <Box className={classes.name} textOverflow="ellipsis" overflow="hidden" component="div">{name}</Box>
+                </LightTooltip>
+                
                 <Typography className={classes.position} >{position}</Typography>
                 <LightTooltip className={classes.tooltip} title={email}>
                   <Box className={classes.email} textOverflow="ellipsis" overflow="hidden" component="div">{email}</Box>
