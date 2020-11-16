@@ -6,15 +6,8 @@
     justify-content: space-between;
     background-color: #fff;
     z-index: 4;
-    margin: 0 auto;
 }
 @media(max-width:1024px){
-    .header{
-        height: 60px ;
-    }
-    
-}
-@media(max-width:2560px){
     .header{
         height: 60px ;
     }

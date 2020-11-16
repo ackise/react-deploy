@@ -21,30 +21,6 @@
         font-weight: normal;
         outline: none;
     }
-}
-.users {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f9f9f3;
-
-    &__title{
-        margin-top: 80px;
-        margin-bottom: 74px;
-    }
-
-    &__button {
-        margin-bottom: 80px;
-        width: 210px;
-        height: 38px;
-        border-radius: 4px;
-        background-color: #ef5b4c;
-        border: none;
-        color: white;
-        font-size: 16px;
-        font-weight: normal;
-        outline: none;
-    }
     &__batch{
         height: 850px;
         overflow: hidden;
@@ -52,9 +28,12 @@
 }
 @media(min-width:768px){
     .users{
+        height: 1105px;
+   
         &__batch {
-            height: unset;
+            height: 580px;
             overflow: unset;
+            margin-bottom: 40px;
     
             display: grid;
             grid-template-columns: repeat(3, 1fr);

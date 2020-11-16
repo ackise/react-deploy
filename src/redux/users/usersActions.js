@@ -5,7 +5,7 @@ import http from '../../services/httpService';
 
 
 export const loadUsersFromServer = (counts,link ) => (dispatch)=>{
-    counts = typeof counts !== 'undefined' ? counts : 3
+    counts = typeof counts !== 'undefined' ? counts : 6
     link = typeof link !== 'undefined' ? link : `${config.apiEndpoint}/users?count=${counts}`
     dispatch({type:actions.GET_USERS , payload:true})
    
