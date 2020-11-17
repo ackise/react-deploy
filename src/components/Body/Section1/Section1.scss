@@ -43,8 +43,7 @@
     &__button{
         display: block;
         margin: -11px 59px 0 58px;
-
-        padding: 12px 57px 9px 59px;
+        padding: 7px 57px 7px 59px;
         width: 210px;
         border-radius: 4px;
         background-color: #ef5b4c;
@@ -58,6 +57,9 @@
 
 @media(min-width:768px){
     .firstsection{
+        background-position: 0%;
+        padding: 67px 288px 65px 30px;
+
 
         align-items: unset;
 
@@ -77,12 +79,26 @@
         }
         &__button{
             margin: 39px 320px 0 0;
-            padding: 12px 57px 9px 59px;
+  
 
         }
     }
+}
+@media(min-width:1024px){
+    .firstsection{
+        padding: 116px 464px 84px 30px;
 
+        &__title{
+            font-size: 50px;
+        }
 
+        &__description{
+            width: 529px;
+            margin-top: 37px;
+
+        }
+ 
+    }
 
 }
 

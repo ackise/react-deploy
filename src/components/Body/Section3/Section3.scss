@@ -25,7 +25,6 @@
 
     &__button {
         width: 210px;
-        height: 38px;
         border-radius: 4px;
         background-color: #ef5b4c;
         border: none;
@@ -35,7 +34,6 @@
         outline: none;
     }
     &__batch{
-        
         height: 825px;
         overflow: hidden;
     }
@@ -54,7 +52,6 @@
             margin: 29px 35px 78px 19px;
   
         }
-   
         &__batch {
             height: 580px;
             overflow: unset;
@@ -66,7 +63,33 @@
             grid-column-gap: 28px;
             grid-row-gap: 0px;
             }
+        &__button {
+                margin: 39px 41px 0 40px;
+                padding: 12px 61px 12px 62px;
+            }
 
     }
     
 }
+@media(min-width:1024px){
+    .users{
+        margin: 156px 1px 158px;
+        padding: 159px 41px 160px 78px;
+
+        &__title{
+            margin: 0 9px 29px 16px;
+            font-size: 50px;
+        }
+        &__description{
+            margin: 29px 60px 78px 68px;  
+        }
+        &__button {
+            margin: 5px 118px 0 126px;
+            padding: 12px 61px 12px 62px;
+
+        }
+
+    }
+
+}
+
