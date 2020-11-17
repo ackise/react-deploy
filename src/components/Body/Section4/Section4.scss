@@ -2,20 +2,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:0 auto;
     margin-top: 70px;
+
+    width: 330px;
 
     &__title{
         font-size: 30px;
         text-align: center;
         color: #212529;
-        margin-bottom: 118px;
+        margin-bottom: 21px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         font-family: 'Open Sans', sans-serif;
-
+    }
+    &__description{
+        font-size: 16px;
+        line-height: 1.38;
+        color: #4c4b4b;
+        margin: 0px 26px 36px;
+        text-align: center;
     }
 
 }
@@ -48,4 +57,41 @@
 .photo-input{
     display: flex;
     flex-direction: row;
+}
+
+@media(min-width:768px){
+    .formwrapper {
+        margin: 0 auto;
+        width: 467px;
+
+        &__title{
+            font-size: 40px;
+            margin: 0 auto;
+        }
+        &__description{
+            margin: 0px 10px 36px;
+
+        }
+    
+    }
+    .form{
+        margin: 0 auto;
+    
+        &__fieldphoto{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        &__intputfield{
+            padding: 5px;
+        }
+    }
+ 
+    .photo-input{
+        display: flex;
+        flex-direction: row;
+        width: 467px;
+    }
+
+
 }

@@ -23,7 +23,7 @@ export const theme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: '330px',
+        width: '100%',
         '& .MuiTextField-root': {
             marginTop: '14px',
 
@@ -89,19 +89,22 @@ const useStyles = makeStyles((theme) => ({
             padding: '16px 68px 16px 13px',
         },
         '& .MuiOutlinedInput-root': {
+            
             '& fieldset': {
                 borderRight: 'none',
                 borderTopRightRadius: 0,
                 borderBottomRightRadius: 0
             }
+        },
+        '@media(min-width:768px)':{
+            '& .MuiOutlinedInput-input': {
+                padding: '16px 205px 16px 13px',
+            },
+
         }
 
     },
-    inputfield: {
-        '&$focused': {
-            borderColor: theme.palette.primary
-        }
-    }
+ 
 
 }));
 
@@ -259,6 +262,7 @@ const Section4 = (props) => {
 
             <div name='form' id='form' className='formwrapper'>
                 <h1 className='formwrapper__title'>Register to get a work </h1>
+                <p className='formwrapper__description'>Attention! After successful registration and alert, update the list of users in the block from the top</p>
                 <form className={classes.root} onSubmit={handleSubmit} autoComplete="off" id='myForm'>
                     <FormControl className={classes.field}>
                         <FormLabel component="legend" htmlFor='name'>Name</FormLabel>

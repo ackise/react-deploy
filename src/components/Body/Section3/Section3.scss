@@ -3,22 +3,27 @@
     flex-direction: column;
     align-items: center;
     background-color: #f9f9f3;
+    margin-top: 80px;
     padding: 80px 17px;
 
 
     &__title{
-        // margin-top: 75px;
-        // margin-bottom: 64px;
         margin: 0 33px 19px 32px;
-
         font-size: 30px;
         font-weight: normal;
+    }
+    &__description{
+        margin: 19px 0 38px;
+        font-size: 16px;
+        color: #4c4b4b;
+        line-height: 1.38;
+
+
 
 
     }
 
     &__button {
-        // margin-bottom: 50px;
         width: 210px;
         height: 38px;
         border-radius: 4px;
@@ -38,6 +43,17 @@
 @media(min-width:768px){
     .users{
         height: 1105px;
+        margin: 116px 0;
+        padding: 111px 30px 121px 36px;
+
+        &__title{
+            margin: 0 25px 29px 11px;
+            font-size: 40px;
+        }
+        &__description{
+            margin: 29px 35px 78px 19px;
+  
+        }
    
         &__batch {
             height: 580px;
@@ -47,7 +63,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 0px;
+            grid-column-gap: 28px;
             grid-row-gap: 0px;
             }
 
