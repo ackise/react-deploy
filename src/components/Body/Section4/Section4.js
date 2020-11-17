@@ -3,7 +3,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import './Section4.scss'
-import { Button, createMuiTheme, FormControlLabel, FormLabel, Radio, RadioGroup } from '@material-ui/core';
+import { Button, FormControlLabel, FormLabel, Radio, RadioGroup } from '@material-ui/core';
 import { connect, useDispatch } from 'react-redux';
 import { loadUsersFromServer } from '../../../redux/users/usersActions';
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,26 +12,13 @@ import Modal from '../../Modal/Modal'
 import * as validation from '../../../services/validation'
 
 
-export const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: '#000'
-        },
-    },
-});
-
-
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
         '& .MuiTextField-root': {
             marginTop: '14px',
 
-        },
-        '& .Mui-focused': {
-            borderColor: 'red'
-        },
-
+        },     
         '& .MuiOutlinedInput-root': {
             '& fieldset': {
                 border: 'solid 1px #d4d9de'
@@ -96,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
                 borderBottomRightRadius: 0
             }
         },
+  
         '@media(min-width:768px)':{
             '& .MuiOutlinedInput-input': {
                 padding: '16px 205px 16px 13px',
@@ -146,6 +134,12 @@ const Section4 = (props) => {
     const handleEmailInput = (e) => {
         let notValidatedEmail = e.target.value
         let validatedEmail = notValidatedEmail.match(validation.mailFormat)
+        if(validatedEmail == null){
+            console.log('bad mail')
+        }
+        if(validatedEmail != null){
+            console.log('valid mail')
+        }
         setEmail(validatedEmail)
     }
 
@@ -156,6 +150,12 @@ const Section4 = (props) => {
     const handlePhoneInput = (e) => {
         let notValidatedPhone = e.target.value
         let validatedPhone = notValidatedPhone.match(validation.phoneformat)
+        if(validatedPhone == null){
+            console.log('bad phone')
+        }
+        if(validatedPhone != null){
+            console.log('valid phone')
+        }
         setPhone(validatedPhone)
     }
 

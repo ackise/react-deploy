@@ -52,7 +52,10 @@
     color: #fff;
     outline: none;
     border: none;
-    
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(203, 60, 50);
 }
 .photo-input{
     display: flex;
